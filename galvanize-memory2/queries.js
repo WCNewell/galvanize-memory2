@@ -1,4 +1,4 @@
-const database = require("./database-connection");
+const database = require("./database-connection")
 
 module.exports = {
     list() {
@@ -21,6 +21,6 @@ module.exports = {
             .then(record => record[0]);
     },
     delete(id) {
-        return database("coffee").delete().where("id", id);
+        return database("coffee").delete().where("id", id)
     }
 };
